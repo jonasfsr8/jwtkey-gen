@@ -9,7 +9,7 @@ namespace jwtkey
             var keyBytes = RandomNumberGenerator.GetBytes(64);
             var key = Convert.ToBase64String(keyBytes);
 
-            Console.WriteLine($"jwt_key: {key}");
+            Console.WriteLine($"secret: {key}");
         }
     }
 }
